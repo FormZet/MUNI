@@ -1,0 +1,213 @@
+body,h1,h2,h3,p{
+	margin: 0;
+	font-family: "Trebuchet MS";
+}
+body{
+	height: 100vh;
+}
+.flexim{
+	display: flex;
+}
+section{
+	margin-right: 20px;
+	justify-content: center;
+	align-items: stretch;
+	flex-direction: row;
+}
+.divan{
+	margin-top: 10px;
+}
+.mebel{
+	margin-bottom: 30px;
+}
+.mebel p{
+	opacity: 0.4;
+}
+.mebel p:hover{
+	opacity: 1;
+	transition: 0.3s;
+}
+* {
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+	float: left;
+}
+.container{
+	margin:0 auto;
+	width: 1460px;
+}
+.s-furniture{
+	background-color: #e2dcd9;
+	height: 500px;
+	width: 320px;
+	padding: 10px;
+}
+h2{
+	font-size: 19px;
+
+}
+.s-furniture p{
+	padding: 10px 0 10px 0;
+}
+.s-settings{	
+	padding: 10px;
+	height: 500px;
+	width: 280px;
+	background-color: #e2dcd9;
+}
+.s-number{
+	padding:10px;
+	height: 500px;
+	width: 190px;
+	background-color: #e2dcd9;
+}
+.s-calendar{
+	padding: 10px;
+	height: 250px;
+	width: 500px;
+	background-color: #e2dcd9;
+}
+.s-calendar img{
+	position: absolute;
+		width: 1.5%;
+}
+.phonee{
+	top: 180px;
+}
+.geo{
+	top: 232px;
+}
+.s-buy{
+	text-align: center;
+	border-top: 10px white solid;
+	padding: 20px;
+	height: 250px;
+	width: 493px;
+	background-color: #57c659;
+	position: relative;
+	top: 250px;
+	left: -398px;
+}
+.mebel img{
+	margin-right: 8px;
+}
+.point{
+	float: right;
+	position: relative;
+	top: -35px;
+}
+.paramsd{
+	margin-bottom: 75px;
+}
+.paramsm{
+	margin-bottom: 15px;
+}
+.paramss{
+	margin-bottom: 10px;
+}
+.amount {
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+.amount span {
+	display:inline-block;
+	width:20px;
+	height:20px;
+	background:#ededed;
+	cursor:pointer;
+	text-align:center;
+}
+.amount span:hover {
+	background:#dfdfdf;
+}
+.amount input {
+	width:30px;
+	text-align:center;
+}
+select{
+	margin-left: 30px;
+	margin-bottom: 30px;
+	margin-top: 20px;
+}
+#calendar2 {
+	background-color: white;
+  width: 50%;
+  font: monospace;
+  line-height: 1.2em;
+  font-size: 15px;
+  text-align: center;
+}
+#calendar2 thead tr:last-child {
+  font-size: small;
+  color: rgb(85, 85, 85);
+}
+#calendar2 thead tr:nth-child(1) td:nth-child(2) {
+  color: rgb(50, 50, 50);
+}
+#calendar2 thead tr:nth-child(1) td:nth-child(1):hover, #calendar2 thead tr:nth-child(1) td:nth-child(3):hover {
+  cursor: pointer;
+}
+#calendar2 tbody td {
+  color: rgb(44, 86, 122);
+}
+#calendar2 tbody td:nth-child(n+6), #calendar2 .holiday {
+  color: rgb(231, 140, 92);
+}
+#calendar2 tbody td.today {
+  background: rgb(220, 0, 0);
+  color: #fff;
+}
+.s-calendar h2{
+	margin-bottom: 20px;
+
+}
+.email{
+	padding-left: 20px;
+	float: right;
+	padding-bottom: 10px;
+	width: 150px;
+	background-color: white;
+
+}
+.phone{padding-left: 20px;
+	float: right;
+	padding-bottom: 10px;
+	width: 150px;
+	background-color: white;
+	margin-bottom: 18px;
+
+}
+.adress{
+	padding-left: 20px;
+	float: right;
+	padding-bottom: 50px;
+	width: 150px;
+	background-color: white;
+	margin-bottom: 20px;
+
+}
+.flexim2{
+	float: right;
+	display: flex;
+	flex-direction: column;
+}
+.stoi{
+	text-transform: uppercase;
+	padding-top: 30px;
+	padding-bottom: 18px;
+	border-bottom: 3px dashed grey;
+}
+.kek{
+	padding-top: 20px;
+	text-transform: uppercase;
+}
+.s-buy span{
+	font-weight: 900;
+	font-size: 30px;
+}
+.point.-is-active {
+	background-color: green;
+}
