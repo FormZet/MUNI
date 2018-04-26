@@ -1,26 +1,26 @@
 $(document).ready(function() {
-	jQuery(function($) {
-  $('#authors-list > li > h3').click(function() {
- 
-    if ($(this).parent().find('ul').length) {
-      $(this).parent().find('ul').slideToggle(200); 
- 
-      return false;
-    }
- 
-  });
-})
+  var sofaCost = 300;
+    var qsofaCost = 400;
+    var wsofaCost = 500;
+    var esofaCost = 600;
+    var rsofaCost = 700;
+    var tsofaCost = 800;
+    var ysofaCost = 900;
+
+
 		$('.down').click(function () {
 			var $input = $(this).parent().find('input');
 			var count = parseInt($input.val()) - 1;
-			count = count < 1 ? 1 : count;
+			count = count < 1 ? 99 : count;
 			$input.val(count);
 			$input.change();
 			return false;
 		});
 		$('.up').click(function () {
 			var $input = $(this).parent().find('input');
-			$input.val(parseInt($input.val()) + 1);
+      var count = parseInt($input.val()) + 1;
+      count = count > 99 ? 0 : count;
+      $input.val(count);
 			$input.change();
 			return false;
 		});
@@ -68,4 +68,67 @@ $('.point').click(function(){
 $('.point').removeClass('-is-active');
     $(this).toggleClass('-is-active');
   })
+$('.vniz').click(function () {
+      var $input = $(this).parent().find('.minets');
+      var count = parseInt($input.val()) - 30;
+      count = count < 00 ? 30 : count;
+      
+      $input.val(count);
+      $input.change();
+      return false; 
+    });
+    $('.verh').click(function () {
+      var $input = $(this).parent().find('.minets');
+      var count = parseInt($input.val()) + 30;
+      count = count > 40 ? 0 : count;
+      $input.val(count);
+      $input.change();
+      return false;
+    });
+      $('.vniz').click(function () {
+      var $input = $(this).parent().find('.hours');
+      var count = parseInt($input.val()) - 1;
+      count = count < 00 ? 23 : count;
+      
+      $input.val(count);
+      $input.change();
+      return false; 
+    });
+      $('.verh').click(function () {
+      var $input = $(this).parent().find('.hours');
+      var count = parseInt($input.val()) + 1;
+      count = count > 23 ? 00 : count;
+      
+      $input.val(count);
+      $input.change();
+      return false; 
+    });
+ $('.sofa').click(function(){
+    $('.span-cost').html('');
+    $('.span-cost').text(sofaCost)
+      })
+ $('.qsofa').click(function(){
+    $('.span-cost').html('');
+    $('.span-cost').text(qsofaCost)
+      })
+ $('.wsofa').click(function(){
+    $('.span-cost').html('');
+    $('.span-cost').text(wsofaCost)
+      })
+ $('.esofa').click(function(){
+    $('.span-cost').html('');
+    $('.span-cost').text(esofaCost)
+      })
+ $('.rsofa').click(function(){
+    $('.span-cost').html('');
+    $('.span-cost').text(rsofaCost)
+      })
+ $('.tsofa').click(function(){
+    $('.span-cost').html('');
+    $('.span-cost').text(tsofaCost)
+      })
+ $('.ysofa').click(function(){
+    $('.span-cost').html('');
+    $('.span-cost').text(ysofaCost)
+      })
 });

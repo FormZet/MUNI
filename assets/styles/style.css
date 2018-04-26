@@ -75,10 +75,10 @@ h2{
 		width: 1.5%;
 }
 .phonee{
-	top: 180px;
+	top: 165px;
 }
 .geo{
-	top: 232px;
+	top: 210px;
 }
 .s-buy{
 	text-align: center;
@@ -133,6 +133,7 @@ select{
 	margin-top: 20px;
 }
 #calendar2 {
+	height: 20px;
 	background-color: white;
   width: 50%;
   font: monospace;
@@ -160,8 +161,7 @@ select{
   background: rgb(220, 0, 0);
   color: #fff;
 }
-.s-calendar h2{
-	margin-bottom: 20px;
+.s-calendar h2{	
 
 }
 .email{
@@ -211,3 +211,30 @@ select{
 .point.-is-active {
 	background-color: green;
 }
+.clock {
+	margin-top: 10px;
+}
+.clock span {
+	display:inline-block;
+	width:20px;
+	height:20px;
+	background:#ededed;
+	cursor:pointer;
+	text-align:center;
+}
+.clock span:hover {
+	background:#dfdfdf;
+}
+.clock input {
+	width:30px;
+	text-align:center;
+}
+.btn{
+	margin-top: 10px;
+	background-color: white;
+	padding: 10px 100px;
+	font-weight: 600;
+	font-size: 30px;
+	border: none;
+	border-radius: 10px;
+}	
